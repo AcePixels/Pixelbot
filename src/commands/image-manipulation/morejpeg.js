@@ -1,0 +1,28 @@
+const { Command, CommandError, CanvasTemplates } = require('../../')
+
+const { Attachment } = require('discord.js')
+
+module.exports = class MoreJpeg extends Command {
+  constructor (client) {
+    super({
+      name: 'morejpeg',
+      aliases: ['needsmorejpeg', 'needsmorejpg', 'jpg', 'compress'],
+      category: 'images',
+      requirements: { canvasOnly: true },
+      parameters: [{
+        type: 'image',
+        missingError: 'commands:morejpeg.missingImage'
+      }]
+    }, client)
+  }
+
+  async run ({ t, author, channel, message }, image) {
+    
+    try {
+      const jpeg = await CanvasTemplates.moreJpeg(image)
+      channel.send(new Attachment(jpeg, 'jpegified.jpg'))
+    } catch (e) {
+      throw new CommandError(t('commands:morejpeg.missingImage'))
+    }
+  }
+}

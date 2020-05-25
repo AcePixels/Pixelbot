@@ -1,0 +1,757 @@
+{
+  "reverse": {
+    "commandDescription": "Reverses the text.",
+    "commandUsage": "<text>",
+    "noSentence": "You have to give me some text to reverse!"
+  },
+  "hmmm": {
+    "commandDescription": "Shows a random image from /r/hmmm."
+  },
+  "smart": {
+    "commandDescription": "Shows the Roll Safe meme."
+  },
+  "softwaregore": {
+    "commandDescription": "Shows a random image from /r/softwaregore."
+  },
+  "thinking": {
+    "commandDescription": "Shows a random :thinking: image from /r/thinking."
+  },
+  "adorable": {
+    "commandDescription": "Generates an adorable avatar."
+  },
+  "avatar": {
+    "commandDescription": "Shows yours or someone else's avatar.",
+    "commandUsage": "[user]",
+    "someonesAvatar": "{{- user}}'s avatar"
+  },
+  "dog": {
+    "commandDescription": "Fetches a random dog and displays it. Woof!",
+    "hereIsYourDog": "Here's your dog!"
+  },
+  "invite": {
+    "commandDescription": "Shows SlayBot's invite link.",
+    "clickHere": "Click here to invite me to your server",
+    "noteThat": "Note that you need the **$t(permissions:MANAGE_GUILD)** permission in order to invite bots."
+  },
+  "ping": {
+    "commandDescription": "Checks if the bot is online.",
+    "loading": "Loading...",
+    "sblatency": "SlayBot Latency",
+    "apilatency": "Client Latency"
+  },
+  "copypasta": {
+    "commandDescription": "Shows a random text from /r/copypasta."
+  },
+  "owo": {
+    "commandDescription": "Owoifies your text.",
+    "commandUsage": "<text>",
+    "missingSentence": "You have to give me some text to owoify!",
+    "tooLongTitle": "Your text is longer than 200 characters!",
+    "tooLongDescription": "Try shortening your text or separate it into multiple commands!"
+  },
+  "piratespeak": {
+    "commandDescription": "Pirateifies your text.",
+    "commandUsage": "<text>",
+    "missingSentence": "You have to give me some text to pirateify!"
+  },
+  "daily": {
+    "commandDescription": "Claims your daily reward.",
+    "alreadyClaimedTitle": "Already claimed",
+    "alreadyClaimedDescription": "You've already claimed your daily reward. You can do it again in **{{time}}**.",
+    "claimedSuccessfully": "You've received **$t(commons:currencyWithCount, { 'count': {{count}} })** as your daily reward!"
+  },
+  "money": {
+    "commandDescription": "Shows how many $t(commons:currency_plural) someone has.",
+    "commandUsage": "[user to lookup]",
+    "youHave": "You have **$t(commons:currencyWithCount, { 'count': {{count}} })** in your account.",
+    "someoneHas": "{{- user}} has **$t(commons:currencyWithCount, { 'count': {{count}} })** in their account."
+  },
+  "kiss": {
+    "commandDescription": "Kisses someone.",
+    "commandUsage": "<user to kiss>",
+    "noMention": "You have to mention someone.",
+    "notYourself": "You can't kiss yourself!",
+    "success": "{{- kisser}} kissed {{- kissed}}."
+  },
+  "handshake": {
+    "commandDescription": "Shakes hands with someone.",
+    "commandUsage": "<user to shake hands with>",
+    "noMention": "You have to mention someone!",
+    "notYourself": "You can't shake hands with yourself!",
+    "success": "{{- handshaker}} shook hands with {{- handshaked}}"
+  },
+  "triggered": {
+    "commandDescription": "Triggers something or someone.",
+    "commandUsage": "[image link]"
+  },
+  "8ball": {
+    "commandDescription": "Asks the magic 8-Ball about something.",
+    "commandUsage": "<question>",
+    "noQuestion": "You have to ask me something!",
+    "answers": {
+      "0": "It is certain.",
+      "1": "It is decidedly so.",
+      "2": "Without a doubt!",
+      "3": "Yes definitely!",
+      "4": "You may rely on it.",
+      "5": "As I see it, yes!",
+      "6": "Most likely.",
+      "7": "Outlook good!",
+      "8": "Yes.",
+      "9": "Signs point to yes.",
+      "10": "Reply hazy try again!",
+      "11": "Ask again later.",
+      "12": "Better not tell you now.",
+      "13": "Cannot predict now.",
+      "14": "Concentrate and ask again!",
+      "15": "Don't count on it.",
+      "16": "My reply is no.",
+      "17": "My sources say no.",
+      "18": "Outlook not so good.",
+      "19": "Very doubtful."
+    }
+  },
+  "fliptext": {
+    "commandDescription": "Flips the text upside down.",
+    "commandUsage": "<text to be flipped>",
+    "noSentence": "You have to give me some text to flip!"
+  },
+  "poll": {
+    "commandDescription": "Creates a poll.",
+    "commandUsage": "<poll title> [|option 1|option 2|option 3|...]",
+    "noQuestion": "You have to give me something to be voted!",
+    "tooManyOptions": "You can't exceed {{maxOptions}} options!"
+  },
+  "createemoji": {
+    "commandDescription": "Creates an emoji.",
+    "commandUsage": "<image link> <name of the emoji>",
+    "noImage": "You have to give me an image link.",
+    "noName": "You have to give me a name for the emoji.",
+    "created": "**{{emoji.name}}** has been created .",
+    "error": "An error has occurred while creating the emoji."
+  },
+  "deleteemoji": {
+    "commandDescription": "Deletes an emoji.",
+    "commandUsage": "<:emoji:|emoji name>",
+    "noEmoji": "You have to give me the emoji you want to delete.",
+    "deleted": "**{{emoji.name}}** has been deleted.",
+    "error": "An error has occurred while deleting emoji."
+  },
+  "help": {
+    "commandDescription": "Shows information about commands or lists them.",
+    "commandUsage": "[command name]",
+    "listTitle": "Available commands",
+    "prefix": "Prefix",
+    "youCanUse": "You can also use {{- botMention}} as a prefix.",
+    "specificInformation": "Type {{helpString}} for command specific information.",
+    "aliases": "Aliases",
+    "subcommands": "Subcommands",
+    "permissions": "Permissions",
+    "botPermissions": "Bot permissions",
+    "flags": "Flags",
+    "noDescriptionProvided": "No description provided.",
+    "noUsageProvided": "No usage provided.",
+    "commandNotFound": "I couldn't find any command with that name."
+  },
+  "e621": {
+    "commandDescription": "Sends a random yiff from e621.",
+    "hereIsYour_yiff": "Here's your yiff!"
+  },
+  "pay": {
+    "commandDescription": "Pays $t(commons:currency_plural) to a user.",
+    "commandUsage": "<@member> <value>",
+    "noMember": "You have to mention someone!",
+    "noValue": "You have to give me a valid number of $t(commons:currency_plural) to send!",
+    "notEnoughMoney": "You don't have enough $t(commons:currency_plural) for that!",
+    "cantPayYourself": "You can't pay yourself!",
+    "transactionSuccessful": "You sent **{{value}} $t(commons:currency{{type}})** to {{receiver}}."
+  },
+  "math": {
+    "commandDescription": "Evaluates a math expression.",
+    "commandUsage": "<expression>",
+    "needMathExpression": "You have to give me a math expression to evaluate!",
+    "invalidMathExpression": "Invalid math expression.",
+    "result": "Result: `{{result}}`"
+  },
+  "isitup": {
+    "commandDescription": "Checks whether a website is up or down.",
+    "commandUsage": "<address>",
+    "isUp": "That website is up!",
+    "isDown": "That website is down.",
+    "details": "It took **{{body.response_time}}ms** for **{{body.response_ip}}** to respond with HTTP code **{{body.response_code}}**.",
+    "noWebsite": "You have to give me a website to check!"
+  },
+  "coinflip": {
+    "commandDescription": "Flips a coin.",
+    "landed": "I've flipped a coin and it landed **$t(commons:{{chosenSide}})**!"
+  },
+  "betflip": {
+    "commandDescription": "Bets $t(commons:currency_plural) on a coin flip.",
+    "commandUsage": "<value to bet> <heads | tails>",
+    "victory": "Yay, it landed **$t(commons:{{chosenSide}})**, so you won **$t(commons:currencyWithCount, { 'count': {{count}} })**!",
+    "loss": "Uh-oh, it landed **$t(commons:{{chosenSide}})**, so you lost **$t(commons:currencyWithCount, { 'count': {{count}} })**.",
+    "noBetValue": "You have to give me a value to bet!",
+    "noCoin": "You have to give me a coin side to bet on!"
+  },
+  "info": {
+    "commandDescription": "Sends information about me.",
+    "hello": "Hello, my name is **{{user.username}}**, and I'm a multi-purpose Discord bot, built to help you with all of your server problems and needs.",
+    "statistics": "I've been up for **{{uptime}}**, helping **{{guilds}} servers** and **{{users}} users** with **{{commands}} commands**. Currently running on **[Node.js {{nodeVersion}}](https://nodejs.org)** and **[discord.js v{{Discord.version}}](https://discord.js.org)**.",
+    "links": "Useful links",
+    "inviteLink": "**[Invite me to your server](https://slaybot.xyz/invite)**",
+    "supportServer": "**[Join my support server](https://slaybot.xyz/support)**",
+    "translate": "**[Translate me to your language](https://slaybot.xyz/translate)**",
+    "github": "**[GitHub repository](https://slaybot.xyz/github)**",
+    "website": "**[My Website](https://slaybot.xyz)**"
+  },
+  "guildinfo": {
+    "commandDescription": "Sends information about the current or another server.",
+    "commandUsage": "[server id]",
+    "id": "ID",
+    "owner": "Owner",
+    "region": "Region",
+    "channels": "Channels **({{count}})**",
+    "textChannels": "Text: **{{count}}**",
+    "voiceChannels": "Voice: **{{count}}**",
+    "createdAt": "Created At",
+    "joinedAt": "Joined At",
+    "members": "Members **({{count}})**",
+    "streaming": "Streaming: **{{count}}**",
+    "online": "Online: **{{count}}**",
+    "idle": "Idle: **{{count}}**",
+    "dnd": "Do Not Disturb: **{{count}}**",
+    "offline": "Offline: **{{count}}**",
+    "users": "Users: **{{count}}**",
+    "bots": "Bots: **{{count}}**"
+  },
+  "country": {
+    "commandDescription": "Gets information about a country.",
+    "commandUsage": "<country name or ISO 3166-1 code>",
+    "noCountry": "You have to give me a country name or ISO 3166-1 country code to get information about.",
+    "aka": "Also known as: `{{alts}}`",
+    "languages": "Languages: {{languages}}",
+    "capital": "Capital: **{{capital}}**",
+    "region": "Region: **{{region}}** ({{subregion}})",
+    "population": "Population: **{{population}}**",
+    "area": "Area: **{{area}} km²**",
+    "timezones": "Timezones: **{{timezones}}**",
+    "currencies": "Currencies: {{currencies}}",
+    "treaties": "Treaties: {{treaties}}"
+  },
+  "userinfo": {
+    "commandDescription": "Sends yours or someone else's user information.",
+    "online": "{{status}} Online",
+    "idle": "{{status}} Idle",
+    "dnd": "{{status}} Do Not Disturb",
+    "offline": "{{status}} Offline",
+    "tag": "DiscordTag",
+    "id": "ID",
+    "status": "Status",
+    "createdAt": "Created at",
+    "joinedAt": "Joined at",
+    "serversInCommon": "Servers in common ({{count}})",
+    "memberNumber": "Member #{{count}}"
+  },
+  "qrcode": {
+    "commandDescription": "Generates or reads a QR code.",
+    "subcommands": {
+      "generate": {
+        "commandDescription": "Generates a QR code.",
+        "commandUsage": "<text>",
+        "noText": " You have to give me some text!"
+      },
+      "read": {
+        "commandDescription": "Reads a QR code.",
+        "commandUsage": "<image/link>",
+        "noImage": "You have to give me an image to read.",
+        "unknownImage": "You have to give me a valid QR code to read."
+      }
+    }
+  },
+  "profile": {
+    "commandDescription": "Shows yours or someone else's profile.",
+    "commandUsage": "[user]",
+    "aboutMe": "About me"
+  },
+  "dicksize": {
+    "commandDescription": "Shows how small your dick is.",
+    "yourDickSize": "Your Dick Size"
+  },
+  "restrictemoji": {
+    "commandDescription": "Permits, rejects or resets emoji usage permission for a role.",
+    "addRole": "To permit an emoji usage for a role, use `{{command}} add <emoji> <role>`.",
+    "removeRole": "To reject an emoji usage for a role, use `{{command}} remove <emoji> <role>`.",
+    "reset": "To reset emoji usage permission for roles, use `{{command}} reset <emoji>`.",
+    "subcommands": {
+      "add": {
+        "commandDescription": "Permits using an emoji for a role.",
+        "commandUsage": "<emoji> <role>",
+        "canUse": "Role `{{role}}` can now use `{{emoji}}`."
+      },
+      "remove": {
+        "commandDescription": "Rejects using an emoji for a role.",
+        "commandUsage": "<emoji> <role>",
+        "cantUse": "Role `{{role}}` can't use `{{emoji}}` anymore."
+      },
+      "reset": {
+        "commandDescription": "Resets emoji usage permission for roles which can use an emoji.",
+        "commandUsage": "<emoji>",
+        "reset": "Reset emoji usage permission for roles which could use `{{emoji}}`."
+      }
+    }
+  },
+  "config": {
+    "commandDescription": "Changes the current server's configuration.",
+    "guildLang": "To change the server language, use `{{command}}language <language code>`",
+    "guildPrefix": "To change the server prefix, use `{{command}}prefix <new prefix>`",
+    "missingTranslation": "**(A few translations might be missing)**"
+  },
+  "cow": {
+    "commandDescription": "Shows a random ASCII cow."
+  },
+  "asciify": {
+    "commandDescription": "Turns your text into an ASCII art.",
+    "commandUsage": "<text>",
+    "noText": "You have to give me some text to asciify!"
+  },
+  "hentai": {
+    "commandDescription": "Sends hentai in an NSFW channel.",
+    "hereIsYourHentai": "Here's your hentai!"
+  },
+  "shiba": {
+    "commandDescription": "Fetches a random Shiba Inu and displays it. Woof!",
+    "hereIsYourShiba": "Here's your Shiba!"
+  },
+  "binary": {
+    "commandDescription": "Converts your text into binary.",
+    "commandUsage": "<text>",
+    "missingText": "You have to give me some text or binary!",
+    "textToBinary": "In Binary",
+    "binaryToText": "In Text",
+    "tooLongTitle": "Your text is longer than 200 characters!",
+    "tooLongDescription": "Try shortening your text or separate it into multiple commands!"
+  },
+  "cowsay": {
+    "commandDescription": "Turns your text into cowsay.",
+    "commandUsage": "<text>",
+    "noText": "You have to give me some text!"
+  },
+  "cat": {
+    "commandDescription": "Fetches a random cat and displays it. Nya~",
+    "hereIsYourCat": "Here's your cat!"
+  },
+  "favcolor": {
+    "commandDescription": "Sets your profile color.",
+    "commandUsage": "<#hexcode>",
+    "changedSuccessfully": "Profile color changed to {{hexcode}}."
+  },
+  "rep": {
+    "commandDescription": "Gives a reputation point to someone.",
+    "commandUsage": "<user>",
+    "noMention": "You have to mention someone!",
+    "reputationPoint": "You gave a reputation point to {{user}}.",
+    "againIn": "You already gave a reputation point to someone today. You can do it again in **{{time}}**.",
+    "alreadyGave": "Already gave reputation",
+    "repYourself": "You can't give a reputation point to yourself!"
+  },
+  "bio": {
+    "commandDescription": "Sets a personal text on your profile.",
+    "commandUsage": "<personal text>",
+    "noText": "You have to give me some text!",
+    "tooLongText": "Your text is longer than {{limit}} characters!",
+    "changedSuccessfully": "Personal text changed!"
+  },
+  "guildicon": {
+    "commandDescription": "Shows the current or another server's icon.",
+    "iconDescription": "{{guild}}'s icon:",
+    "noIcon": "This server doesn't have an icon!"
+  },
+  "emoji": {
+    "commandDescription": "Enlarges an emoji.",
+    "hereIsYourEmoji": "Here's your emoji!"
+  },
+  "clapify": {
+    "commandDescription": "Clapifies your text.",
+    "commandUsage": "<text to clapify>",
+    "missingSentence": "You have to give me some text to clapify!",
+    "tooLongText": "Your text can't be longer than {{limit}} characters!"
+  },
+  "numberfacts": {
+    "commandDescription": "Shows a fact about a number.",
+    "commandUsage": "<number>",
+    "validNumber": "You have to give me a number!"
+  },
+  "blacklist": {
+    "commandDescription": "Adds a user to the blacklist.",
+    "commandUsage": "<user> <reason>",
+    "missingUser": "You have to give me a user to blacklist!",
+    "missingReason": "You have to give me a reason for blacklisting!",
+    "successTitle": "User added to the blacklist!"
+  },
+  "kick": {
+    "commandDescription": "Kicks a member from this server.",
+    "commandUsage": "<member> <reason>",
+    "missingUser": "You have to give me a member to kick!",
+    "missingReason": "You have to give me a reason for kicking!",
+    "noPermission": "I'm missing the **$t(permissions:KICK_MEMBERS)** permission to kick this member.",
+    "successTitle": "Member was kicked!",
+    "cantKick": "I can't kick this member!"
+  },
+  "ban": {
+    "commandDescription": "Bans a member from this server.",
+    "commandUsage": "<member> <reason>",
+    "missingUser": "You have to give me a member to ban!",
+    "missingReason": "You have to give me a reason for banning!",
+    "noPermission": "I'm missing the **$t(permissions:BAN_MEMBERS)** permission to ban this member.",
+    "successTitle": "Member was banned!",
+    "cantBan": "I can't ban this member!"
+  },
+  "softban": {
+    "commandDescription": "Bans a member, removes all of their messages and then unbans them.",
+    "commandUsage": "<member> <reason>",
+    "missingUser": "You have to give me a member to softban!",
+    "missingReason": "You have to give me a reason for softbanning!",
+    "noPermission": "I'm missing the **$t(permissions:BAN_MEMBERS)** permission to softban this member.",
+    "successTitle": "Member was softbanned!",
+    "cantSoftban": "I can't softban this member!"
+  },
+  "unblacklist": {
+    "commandDescription": "Removes a user from the blacklist.",
+    "commandUsage": "<user>",
+    "success": "{{user}} has been removed from the blacklist!",
+    "missingUser": "You have to give me a user to remove from the blacklist!",
+    "notBlacklisted": "That user isn't blacklisted."
+  },
+  "whyblacklisted": {
+    "commandDescription": "Shows why someone is blacklisted.",
+    "commandUsage": "<user>",
+    "missingUser": "You have to give me a user to check the reason!",
+    "notBlacklisted": "That user isn't blacklisted.",
+    "reasonTitle": "{{user}} was blacklisted by {{blacklister}}"
+  },
+  "tipsfedora": {
+    "commandDescription": "Shows the Tips Fedora meme."
+  },
+  "leaderboard": {
+    "commandDescription": "Shows a leaderboard.",
+    "commandUsage": "<type>",
+    "subcommands": {
+      "money": {
+        "commandDescription": "Shows a list of the richest users.",
+        "title": "Money Leaderboard"
+      },
+      "reputation": {
+        "commandDescription": "Shows a list of the users with the most reputation points.",
+        "title": "Reputation Leaderboard"
+      }
+    }
+  },
+  "bolinadegorfe": {
+    "commandDescription": "Shows the \"boliña de gorfe\" meme from Woody Woodpecker."
+  },
+  "eval": {
+    "commandDescription": "Evals a JS string."
+  },
+  "oddlysatisfying": {
+    "commandDescription": "Shows a random image from /r/oddlysatisfying."
+  },
+  "aww": {
+    "title": "Here is some eyebleach for ya!",
+    "commandDescription": "Shows a random image from /r/aww."
+  },
+  "vaporwave": {
+    "commandDescription": "Vaporwavefies the text.",
+    "commandUsage": "<text>",
+    "missingSentence": "You have to give me some text to vaporwavefy!"
+  },
+  "leet": {
+    "commandDescription": "Leetifies the t3xt.",
+    "commandUsage": "<text>",
+    "missingSentence": "Y0u h4v3 t0 g1v3 m3 s0m3 t3xt t0 l33t1fy!"
+  },
+  "emojify": {
+    "commandDescription": "Emojifies the text.",
+    "commandUsage": "<text>",
+    "missingSentence": "You have to give me some text to emojify!"
+  },
+  "fox": {
+    "commandDescription": "Shows a random image of a fox.",
+    "hereIsYourFox": "Here's your fox!"
+  },
+  "birb": {
+    "commandDescription": "Shows a random image of a birb.",
+    "hereIsYourBirb": "Here's your birb!"
+  },
+  "reloadlocales": {
+    "commandDescription": "Reloads the locales folder.",
+    "reloaded": "Locales reloaded!"
+  },
+  "parrot": {
+    "commandDescription": "Shows a random image from /r/partyparrot."
+  },
+  "pat": {
+    "commandDescription": "Pats someone.",
+    "commandUsage": "<user to pat>",
+    "noMention": "You have to mention someone!",
+    "success": "{{- _author}} pats {{- pat}}"
+  },
+  "hug": {
+    "commandDescription": "Hugs someone.",
+    "commandUsage": "<user to hug>",
+    "noMention": "You have to mention someone!",
+    "success": "{{- hugger}} hugged {{- hugged}}."
+  },
+  "slap": {
+    "commandDescription": "Slaps someone.",
+    "commandUsage": "<user to slap>",
+    "noMention": "You have to mention someone!",
+    "success": "{{- _author}} slapped {{- slapped}} BAKA :<"
+  },
+  "currency": {
+    "commandDescription": "Shows the current rate of a currency or a pair.",
+    "commandUsage": "[from] [value] <to>",
+    "noCurrency": "You have to give me a valid currency or a pair."
+  },
+  "joinlock": {
+    "commandDescription": "Enables or disables the join lock.",
+    "commandUsage": "<on|off>",
+    "sameValue_true": "The join lock is already enabled.",
+    "sameValue_false": "The join lock is already disabled.",
+    "success_true": "Join lock enabled.",
+    "success_false": "Join lock disabled."
+  },
+  "reversetext": {
+    "commandDescription": "Reverses the text.",
+    "missingSentence": "You have to give me some text to reverse!",
+    "commandUsage": "<text to reverse>"
+  },
+  "support": {
+    "commandDescription": "Shows the link to SlayBot support server.",
+    "clickHere": "**[Click here to join my support server](https://slaybot.xyz/support)**"
+  },
+  "roleinfo": {
+    "commandDescription": "Shows information about a role.",
+    "commandUsage": "<role name, mention or id>",
+    "id": "ID",
+    "name": "Name",
+    "mention": "Mention",
+    "createdAt": "Created At",
+    "members": "Members",
+    "position": "Position",
+    "mentionable": "Mentionable",
+    "hoisted": "Hoisted",
+    "color": "Color",
+    "online": "{{count}} online",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "presidentialalert": {
+    "commandDescription": "Generates a Presidential Alert notification.",
+    "commandUsage": "<text>",
+    "missingText": "You have to give me some text for the alert!"
+  },
+  "showerthoughts": {
+    "commandDescription": "Shows a random thought from r/Showerthoughts."
+},
+  "keanu": {
+    "commandDescription": "Shows a random image from r/KeanuBeingAwesome."
+  },
+  "tictactoe": {
+    "commandDescription": "Challenge someone to a game of Tic Tac Toe.",
+    "commandUsage": "<user to challenge>",
+    "missingUser": "You have to give me someone to challenge!",
+    "title": "Tic Tac Toe",
+    "pleaseWait": "Please wait, loading board...",
+    "currentPlayer": "Current player",
+    "itsYourTurn": "It's your turn, {{player}}",
+    "itsATie": "It's a tie!",
+    "wins": "{{player}} wins!",
+    "timeout": "This Tic Tac Toe invite has timed out.",
+    "hasChallenged": "{{player}} has challenged you to a game of Tic Tac Toe.",
+    "clickTheReaction": "Click the {{CONFIRMATION_EMOJI}} reaction button below to accept.",
+    "thisTimeoutsIn": "You have {{COLLECTOR_TIMEOUT}} seconds to accept it."
+  },
+  "ass": {
+    "commandDescription": "Shows a random image from r/ass."
+  },
+  "boobs": {
+    "commandDescription": "Shows a random image from r/boobs."
+  },
+  "pussy": {
+    "commandDescription": "Shows a random image from r/pussy."
+  },
+  "thighs": {
+    "commandDescription": "Shows a random image from r/thighs."
+  },
+  "welcometranslator": {
+    "commandDescription": "Welcomes a new translator.",
+    "commandUsage": "<user>",
+    "noMember": "You have to mention someone!",
+    "cantWelcomeYourself": "You can't welcome yourself!",
+    "welcomeMessage": "Welcome to the team {{member}}!\nIn <#447005926981894144> you can talk about translation related stuff.\nYou will see announcements in <#476110480377905163>.\nYou will get pinged in <#450050899197296651> when there are new strings.\nLast but not least, you can see some useful info in <#447962790918094878>.\n\nIf you have any questions, feel free to ask!"
+  },
+  "purge": {
+    "commandDescription": "Purges messages from a channel. (Default: 50)",
+    "commandUsage": "[number of messages] [user]",
+    "purgedSingular": "Purged **{{count}}** message.",
+    "purgedPlural": "Purged **{{count}}** messages.",
+    "purgedMemberSingular": "Purged **{{count}}** message sent by **{{user}}**.",
+    "purgedMemberPlural": "Purged **{{count}}** messages sent by **{{user}}**.",
+    "invalidNumber": "You have to give me a number between 1 and 100!"
+  },
+  "morejpeg": {
+    "commandDescription": "Adds JPEG compression to an image.",
+    "commandUsage": "[image link]",
+    "missingImage": "You have to give me an image or a link!"
+  },
+  "hastebin": {
+    "commandDescription": "Uploads code to hastebin.",
+    "commandUsage": "<code>",
+    "missingCode": "You need to give me some code to upload!",
+    "hereIsYourURL": "Here's your link!"
+  },
+  "translate": {
+    "commandDescription": "Translates a text from one language to another.",
+    "commandUsage": "<from> <to> <text>",
+    "targetLanguageInvalid": "Target language {{target}} not found. Translated to English.",
+    "translatedFrom": "Translated from",
+    "translatedTo": "Translated to",
+    "automatic": "(automatic detected)",
+    "title": "Translation"
+  },
+  "quieres": {
+    "commandDescription": "Generates a \"¿Quieres?\" meme with the provided image.",
+    "commandUsage": "<image>",
+    "missingImage": "You need to give me an image to generate the meme with."
+  },
+  "color": {
+    "commandDescription": "Gets information about a color.",
+    "commandUsage": "<color>",
+    "hex": "Hex",
+    "rgb": "RGB",
+    "hsl": "HSL"
+  },
+  "crappydesign": {
+    "commandDescription": "Shows a random image from r/CrappyDesign.",
+    "title": "Here's your crappy design."
+  },
+  "createrole": {
+    "commandDescription": "Create a role.",
+    "commandUsage": "[color] <name>",
+    "successTitle": "Role was created!",
+    "errorTitle": "Role could not be created!",
+    "noParams": "You need to include a role name!",
+    "successMessage": "Name of the role: {{name}}"
+  },
+  "goat": {
+    "commandDescription": "Shows a goat image from placegoat.com",
+    "commandUsage": "[width] [height]",
+    "hereIsYourGoat": "Here is your goat!",
+    "hereIsYourGoat_resolution": "Here is your **{{width}}x{{height}}** goat!"
+  },
+  "coronavirus": {
+    "title": "Coronavirus Statistics",
+    "loading": "Loading...",
+    "commandDescription": "Shows 25 top infected countries about the coronavirus.",
+    "confirmed": "confirmed cases",
+    "deaths": "deaths and",
+    "recovered": "recovered",
+    "cases": "Cases",
+    "deaths2": "Deaths",
+    "recovered2": "Recovered"
+  },
+  "vote": {
+    "commandDescription": "Gives you a bonus for voting on bot lists.",
+    "howToVote": {
+      "dbl": "**[Vote on DBL]({{link}})** to claim your bonus."
+    }
+  },
+  "status": {
+    "commandDescription": "Gives a link to SlayBot's Statuspage.",
+    "statusDesc": "Check out [SlayBot's Statuspage](https://status.slaybot.xyz) to check that everything is working"
+  },
+  "donate": {
+    "commandDescription": "You can support our work with donating us via PayPal!",
+    "donateDesc": "Want to support our work? You can donate to me via [PayPal!](https://www.paypal.me/GhostSlayeri)"
+  },
+  "web": {
+    "commandDescription": "Gives a link to SlayBot's Website.",
+    "webDesc": "You can modify SlayBot on your server using our dashboard, and check more information of specific command.\n\nhttps://slaybot.xyz"
+  },
+  "uptime": {
+    "commandDescription": "Check SlayBot's Uptime.",
+    "uptimeDesc": "SlayBot has been online for {{uptime}}"
+  },
+  "prefix": {
+    "commandDescription": "Changes the current server prefix.",
+    "commandUsage": "<new prefix>",
+    "noPrefix": "You have to give me a prefix!",
+    "changedSuccessfully": "Prefix changed to `{{prefix}}`."
+  },
+  "language": {
+    "commandDescription": "Changes the current server language.",
+    "commandUsage": "<language code>",
+    "noCode": "You have to give me a language code!",
+    "availableLanguages": "Available languages",
+    "changedSuccessfully": "Language changed to `{{lang}}`."
+  },
+  "bug": {
+    "commandDescription": "If you find a bug, then you can report it with this command!",
+    "commandUsage": "<text>",
+    "missingText": "You have to give me information of the bug!",
+    "successTitle": "Bug Report Sent!",
+    "success": "Your bug report has been successfully sent to SlayBot Developer!",
+    "reportTitle": "New Bug Report!"
+  },
+  "work": {
+    "commandDescription": "Work to get some Slaycoins!",
+    "alreadyClaimedTitle": "Already claimed",
+    "alreadyClaimedDescription": "Take a little break, you can work again in **{{time}}**.",
+    "claimedSuccessfully": "You've received **$t(commons:currencyWithCount, { 'count': {{count}} })** for working!",
+    "answers": {
+      "0": "You repaired the lights and received **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "1": "Taxes collected! You have gained **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "2": "You fixed a toilet and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "3": "You made a Youtube video and got **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "4": "Your boss gave you only **$t(commons:currencyWithCount, { 'count': {{count}} })** for making a chair! Thats ridiculous",
+      "5": "You went outside and got **$t(commons:currencyWithCount, { 'count': {{count}} })** by walking.",
+      "6": "You worked as a babysitter and their mom gave you **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "7": "You worked as a engineer and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "8": "You worked as a game programmer and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "9": "You worked as a designer and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "10": "You worked as a back-end developer and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "11": "You worked as a front-end and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "12": "You worked as a Discord Bot Developer and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "13": "You worked as a Indian Microsoft Tech Support and earned **$t(commons:currencyWithCount, { 'count': {{count}} })** by scamming people",
+      "14": "You made a website for a Youtuber and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "15": "You worked as a editor to PewDiePie and earned **$t(commons:currencyWithCount, { 'count': {{count}} })**",
+      "16": "",
+      "17": "",
+      "18": "",
+      "19": "",
+      "20": "",
+      "21": "",
+      "22": "",
+      "23": "",
+      "24": "",
+      "25": "",
+      "26": "",
+      "27": "",
+      "28": "",
+      "29": "",
+      "30": ""
+
+    },
+    "answersfooter": {
+      "0": "0","1": "1","2": "2","3": "3","4": "4","5": "5","6": "6","7": "7","8": "8","9": "9",
+      "10": "10","11": "11","12": "12","13": "13","14": "14","15": "15","16": "16","17": "17","18": "18","19": "19",
+      "20": "20","21": "21","22": "22","23": "23","24":"24","25": "25","26": "26","27": "27","28": "28","29": "29"
+    }
+  },
+  "crime": {
+    "commandDescription": "Do a crime to get some Slaycoins!",
+    "alreadyClaimedTitle": "Already claimed",
+    "alreadyClaimedDescription": "Take a little break, you can do crime again in **{{time}}**.",
+    "claimedSuccessfully": "You've received **$t(commons:currencyWithCount, { 'count': {{count}} })** for doing a crime!"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bot": "Core",
+  "configuration": "Configuration",
+  "coronavirus": "Coronavirus (COVID-19)",
+  "developers": "Developers",
+  "economy": "Economy",
+  "games": "Games",
+  "general": "General",
+  "images": "Images",
+  "memes": "Memes",
+  "moderation": "Moderation",
+  "nsfw": "NSFW",
+  "social": "Social",
+  "utility": "Utility"
+}
