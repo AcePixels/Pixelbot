@@ -11,9 +11,6 @@ pids
 *.seed
 *.pid.lock
 
-# Dotenv
-.env
-
 # Heroku Procfile
 Procfile
 
