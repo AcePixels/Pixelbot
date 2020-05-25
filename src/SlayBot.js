@@ -10,9 +10,8 @@ require('dotenv').config();
  * @param {Object} options - Options for the client
  */
 module.exports = class SlayBot extends Client {
-  constructor (options = {}, sentry) {
+  constructor (options = {}) {
     super(options)
-    this.sentry = sentry
     this.canvasLoaded = options.canvasLoaded
 
     this.initializeLoaders()
@@ -66,7 +65,6 @@ module.exports = class SlayBot extends Client {
    * @param {string} message - Error message
    */
   logError (...args) {
-    this.sentry.captureException(args[args.length - 1])
     const tags = args.length > 1 ? args.slice(0, -1).map(t => `[${t}]`) : []
     console.error('[ErrorLog]', ...tags, args[args.length - 1])
   }

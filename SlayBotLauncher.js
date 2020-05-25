@@ -1,6 +1,3 @@
-const Sentry = require('@sentry/node');
-Sentry.init({ dsn: process.env.SENTRY_DSN });
-
 // Initialize functions
 const { readFileSync } = require('fs')
 
@@ -25,7 +22,7 @@ const CLIENT_OPTIONS = {
 console.log(readFileSync('bigtitle.txt', 'utf8').toString())
 
 const SlayBot = require('./src/SlayBot.js')
-const client = new SlayBot(CLIENT_OPTIONS, Sentry)
+const client = new SlayBot(CLIENT_OPTIONS)
 client.login()
   .then(() => client.log('Logged in successfully!', { color: 'green', tags: ['Discord'] }))
   .catch(client.logError)
